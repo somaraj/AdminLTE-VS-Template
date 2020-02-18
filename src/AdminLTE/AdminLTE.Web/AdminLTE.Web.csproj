@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A11E7ECB-34E1-460E-B010-620995175C31}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AdminLTE.Web</RootNamespace>
+    <AssemblyName>AdminLTE.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44363</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Css\adminlte.css" />
+    <Content Include="Content\Css\adminlte.min.css" />
+    <Content Include="Content\Images\AdminLTELogo.png" />
+    <Content Include="Content\Images\avatar.png" />
+    <Content Include="Content\Images\avatar04.png" />
+    <Content Include="Content\Images\avatar2.png" />
+    <Content Include="Content\Images\avatar3.png" />
+    <Content Include="Content\Images\avatar5.png" />
+    <Content Include="Content\Images\boxed-bg.jpg" />
+    <Content Include="Content\Images\boxed-bg.png" />
+    <Content Include="Content\Images\credit\american-express.png" />
+    <Content Include="Content\Images\credit\cirrus.png" />
+    <Content Include="Content\Images\credit\mastercard.png" />
+    <Content Include="Content\Images\credit\mestro.png" />
+    <Content Include="Content\Images\credit\paypal.png" />
+    <Content Include="Content\Images\credit\paypal2.png" />
+    <Content Include="Content\Images\credit\visa.png" />
+    <Content Include="Content\Images\default-150x150.png" />
+    <Content Include="Content\Images\icons.png" />
+    <Content Include="Content\Images\photo1.png" />
+    <Content Include="Content\Images\photo2.png" />
+    <Content Include="Content\Images\photo3.jpg" />
+    <Content Include="Content\Images\photo4.jpg" />
+    <Content Include="Content\Images\prod-1.jpg" />
+    <Content Include="Content\Images\prod-2.jpg" />
+    <Content Include="Content\Images\prod-3.jpg" />
+    <Content Include="Content\Images\prod-4.jpg" />
+    <Content Include="Content\Images\prod-5.jpg" />
+    <Content Include="Content\Images\user1-128x128.jpg" />
+    <Content Include="Content\Images\user2-160x160.jpg" />
+    <Content Include="Content\Images\user3-128x128.jpg" />
+    <Content Include="Content\Images\user4-128x128.jpg" />
+    <Content Include="Content\Images\user5-128x128.jpg" />
+    <Content Include="Content\Images\user6-128x128.jpg" />
+    <Content Include="Content\Images\user7-128x128.jpg" />
+    <Content Include="Content\Images\user8-128x128.jpg" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Plugins\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Plugins\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="Plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Plugins\fontawesome-free\css\all.css" />
+    <Content Include="Plugins\fontawesome-free\css\all.min.css" />
+    <Content Include="Plugins\fontawesome-free\css\brands.css" />
+    <Content Include="Plugins\fontawesome-free\css\brands.min.css" />
+    <Content Include="Plugins\fontawesome-free\css\fontawesome.css" />
+    <Content Include="Plugins\fontawesome-free\css\fontawesome.min.css" />
+    <Content Include="Plugins\fontawesome-free\css\regular.css" />
+    <Content Include="Plugins\fontawesome-free\css\regular.min.css" />
+    <Content Include="Plugins\fontawesome-free\css\solid.css" />
+    <Content Include="Plugins\fontawesome-free\css\solid.min.css" />
+    <Content Include="Plugins\fontawesome-free\css\svg-with-js.css" />
+    <Content Include="Plugins\fontawesome-free\css\svg-with-js.min.css" />
+    <Content Include="Plugins\fontawesome-free\css\v4-shims.css" />
+    <Content Include="Plugins\fontawesome-free\css\v4-shims.min.css" />
+    <Content Include="Plugins\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="Plugins\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="Plugins\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="Plugins\jquery\core.js" />
+    <Content Include="Plugins\jquery\jquery.js" />
+    <Content Include="Plugins\jquery\jquery.min.js" />
+    <Content Include="Plugins\jquery\jquery.slim.js" />
+    <Content Include="Plugins\jquery\jquery.slim.min.js" />
+    <Content Include="Scripts\adminlte.js" />
+    <Content Include="Scripts\adminlte.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Plugins\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Plugins\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Plugins\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Plugins\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="Plugins\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="Plugins\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="Plugins\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="Plugins\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="Plugins\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="Plugins\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="Plugins\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="Plugins\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="Plugins\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="Plugins\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="Plugins\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="Plugins\jquery\jquery.min.map" />
+    <Content Include="Plugins\jquery\jquery.slim.min.map" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_NavBar.cshtml" />
+    <Content Include="Views\Shared\_SideBar.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52229</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44363/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
